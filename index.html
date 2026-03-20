@@ -1,0 +1,442 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OSTEOMED – Dott. Pasquale Pannuti</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="osteomed ico-Photoroom.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <!-- ── LOADER ── -->
+    <div id="loader">
+      <div class="loader-icon">
+        <img src="osteomed ico-Photoroom.png" alt="Loading" id="loader-img" />
+      </div>
+      <p class="loader-text">OSTEOMED</p>
+    </div>
+
+    <!-- ── NAVBAR ── -->
+    <header id="navbar">
+      <div class="nav-inner">
+        <a href="#" class="nav-logo">
+          <img src="osteomed logo-Photoroom.png" alt="OSTEOMED Logo" />
+        </a>
+        <nav class="nav-links">
+          <a href="#chi-siamo">Chi Siamo</a>
+          <a href="#servizi">Servizi</a>
+          <a href="#approccio">Il Nostro Approccio</a>
+          <a href="#faq">FAQ</a>
+          <a href="#contatti" class="nav-cta">Prenota</a>
+        </nav>
+        <button class="burger" id="burger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+      <!-- Mobile menu -->
+      <div class="mobile-menu" id="mobile-menu">
+        <a href="#chi-siamo">Chi Siamo</a>
+        <a href="#servizi">Servizi</a>
+        <a href="#approccio">Il Nostro Approccio</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contatti">Prenota</a>
+      </div>
+    </header>
+
+    <!-- ── HERO ── -->
+    <section class="hero" id="home">
+      <div class="hero-bg-shape"></div>
+      <div class="hero-content">
+        <span class="hero-tag">Osteopatia · Benessere · Cura</span>
+        <h1>Il tuo corpo<br /><em>merita equilibrio</em></h1>
+        <p class="hero-sub">
+          Un approccio globale alla salute che ascolta ogni segnale del tuo
+          organismo per restituirti movimento, libertà e benessere duraturo.
+        </p>
+        <div class="hero-actions">
+          <a href="#contatti" class="btn-primary">Prenota una visita</a>
+          <a href="#chi-siamo" class="btn-ghost">Scopri di più</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-circle-outer">
+          <div class="hero-circle-inner">
+            <img
+              src="osteomed logo-Photoroom.png"
+              alt="Osteomed icon"
+              class="hero-icon-spin"
+            />
+          </div>
+        </div>
+        <div class="hero-blob"></div>
+      </div>
+      <div class="hero-scroll-hint">
+        <span>Scorri</span>
+        <div class="scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- ── STRIP ── -->
+    <div class="strip">
+      <div class="strip-inner">
+        <span>Postura</span><span class="dot">·</span>
+        <span>Dolore cronico</span><span class="dot">·</span> <span>Sport</span
+        ><span class="dot">·</span> <span>Pediatria</span
+        ><span class="dot">·</span> <span>Gravidanza</span
+        ><span class="dot">·</span> <span>Riabilitazione</span
+        ><span class="dot">·</span> <span>Cefalee</span
+        ><span class="dot">·</span>
+        <span>Benessere</span>
+      </div>
+    </div>
+
+    <!-- ── CHI SIAMO ── -->
+    <section class="section chi-siamo" id="chi-siamo">
+      <div class="section-inner two-col">
+        <div class="col-text reveal">
+          <span class="section-tag">Chi Siamo</span>
+          <h2>Una visione olistica<br />della persona</h2>
+          <p>
+            OSTEOMED nasce dalla passione del Dott. Pasquale Pannuti per
+            l'osteopatia come disciplina capace di ascoltare il corpo nella sua
+            interezza. Ogni seduta è un dialogo tra professionista e paziente,
+            pensata per individuare le cause profonde del disagio, non solo i
+            sintomi.
+          </p>
+          <p>
+            Con anni di formazione e pratica clinica, il nostro studio offre un
+            ambiente accogliente e professionale in cui la cura della persona è
+            sempre al centro.
+          </p>
+          <a href="#contatti" class="btn-primary">Conosci il dottore</a>
+        </div>
+        <div class="col-visual reveal delay-1">
+          <div class="portrait-card">
+            <div class="portrait-placeholder">
+              <img src="dottor_pannuti.png" alt="Dott. Pannuti" />
+            </div>
+            <div class="portrait-info">
+              <strong>Dott. Pasquale Pannuti</strong>
+              <span>Osteopata D.O.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── NUMERI ── -->
+    <section class="section numeri">
+      <div class="section-inner numeri-grid">
+        <div class="numero-card reveal">
+          <span class="numero">+500</span>
+          <span class="numero-label">Pazienti seguiti</span>
+        </div>
+        <div class="numero-card reveal delay-1">
+          <span class="numero">10+</span>
+          <span class="numero-label">Anni di esperienza</span>
+        </div>
+        <div class="numero-card reveal delay-2">
+          <span class="numero">98%</span>
+          <span class="numero-label">Soddisfazione pazienti</span>
+        </div>
+        <div class="numero-card reveal delay-3">
+          <span class="numero">100%</span>
+          <span class="numero-label">Approccio personalizzato</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── SERVIZI ── -->
+    <section class="section servizi" id="servizi">
+      <div class="section-inner">
+        <div class="section-header reveal">
+          <span class="section-tag">Servizi</span>
+          <h2>Cosa possiamo fare<br />per te</h2>
+        </div>
+        <div class="servizi-grid">
+          <div class="servizio-card reveal">
+            <div class="servizio-icon">⊕</div>
+            <h3>Osteopatia strutturale</h3>
+            <p>
+              Trattamento delle disfunzioni muscolo-scheletriche, dolori
+              articolari, cervicalgia e lombalgia.
+            </p>
+          </div>
+          <div class="servizio-card reveal delay-1">
+            <div class="servizio-icon">◎</div>
+            <h3>Osteopatia viscerale</h3>
+            <p>
+              Approccio agli organi interni e alle loro relazioni con postura e
+              mobilità corporea.
+            </p>
+          </div>
+          <div class="servizio-card reveal delay-2">
+            <div class="servizio-icon">✦</div>
+            <h3>Osteopatia craniosacrale</h3>
+            <p>
+              Tecnica delicata per riequilibrare il sistema nervoso centrale e
+              le membrane craniali.
+            </p>
+          </div>
+          <div class="servizio-card reveal delay-3">
+            <div class="servizio-icon">◈</div>
+            <h3>Osteopatia pediatrica</h3>
+            <p>
+              Trattamento dolce e sicuro per neonati e bambini: coliche,
+              disturbi del sonno, plagiocefalia.
+            </p>
+          </div>
+          <div class="servizio-card reveal delay-1">
+            <div class="servizio-icon">⊗</div>
+            <h3>Osteopatia in gravidanza</h3>
+            <p>
+              Supporto al benessere materno nelle diverse fasi della gravidanza
+              e nel post-parto.
+            </p>
+          </div>
+          <div class="servizio-card reveal delay-2">
+            <div class="servizio-icon">⊘</div>
+            <h3>Osteopatia sportiva</h3>
+            <p>
+              Prevenzione e recupero degli infortuni per sportivi amatoriali e
+              professionisti.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── APPROCCIO ── -->
+    <section class="section approccio" id="approccio">
+      <div class="section-inner">
+        <div class="section-header reveal">
+          <span class="section-tag">Il Nostro Approccio</span>
+          <h2>Ogni seduta è un percorso</h2>
+        </div>
+        <div class="steps">
+          <div class="step reveal">
+            <div class="step-num">01</div>
+            <div class="step-content">
+              <h3>Ascolto e anamnesi</h3>
+              <p>
+                Un colloquio approfondito per comprendere la storia del tuo
+                corpo, le tue abitudini e i tuoi obiettivi.
+              </p>
+            </div>
+          </div>
+          <div class="step reveal delay-1">
+            <div class="step-num">02</div>
+            <div class="step-content">
+              <h3>Valutazione osteopatica</h3>
+              <p>
+                Esame posturale e funzionale per individuare le restrizioni di
+                mobilità e le disfunzioni presenti.
+              </p>
+            </div>
+          </div>
+          <div class="step reveal delay-2">
+            <div class="step-num">03</div>
+            <div class="step-content">
+              <h3>Trattamento personalizzato</h3>
+              <p>
+                Tecniche manuali specifiche selezionate in base alle tue
+                necessità per ripristinare l'equilibrio.
+              </p>
+            </div>
+          </div>
+          <div class="step reveal delay-3">
+            <div class="step-num">04</div>
+            <div class="step-content">
+              <h3>Follow-up e prevenzione</h3>
+              <p>
+                Piano di mantenimento e consigli per preservare i risultati
+                raggiunti nel tempo.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── TESTIMONIANZE ── -->
+    <section class="section testimonianze">
+      <div class="section-inner">
+        <div class="section-header reveal">
+          <span class="section-tag">Testimonianze</span>
+          <h2>Cosa dicono i pazienti</h2>
+        </div>
+        <div class="testi-grid">
+          <div class="testi-card reveal">
+            <div class="stars">★★★★★</div>
+            <p>
+              "Dopo anni di lombalgia cronica, finalmente ho trovato sollievo
+              duraturo. Il Dott. Pannuti è un professionista eccezionale."
+            </p>
+            <span class="testi-author">— Marco R.</span>
+          </div>
+          <div class="testi-card reveal delay-1">
+            <div class="stars">★★★★★</div>
+            <p>
+              "Ho portato mia figlia neonata per le coliche e i risultati sono
+              stati sorprendenti già dalla prima seduta."
+            </p>
+            <span class="testi-author">— Giulia T.</span>
+          </div>
+          <div class="testi-card reveal delay-2">
+            <div class="stars">★★★★★</div>
+            <p>
+              "Studio accogliente, professionalità alta e un approccio umano che
+              fa sentire davvero ascoltati."
+            </p>
+            <span class="testi-author">— Luca M.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── FAQ ── -->
+    <section class="section faq" id="faq">
+      <div class="section-inner faq-inner">
+        <div class="section-header reveal">
+          <span class="section-tag">FAQ</span>
+          <h2>Domande frequenti</h2>
+        </div>
+        <div class="faq-list">
+          <div class="faq-item reveal">
+            <button class="faq-question">
+              Cos'è l'osteopatia?<span class="faq-arrow">↓</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                L'osteopatia è una disciplina manuale che considera il corpo
+                come un'unità funzionale. Attraverso tecniche specifiche,
+                l'osteopata individua e tratta le disfunzioni che limitano la
+                mobilità e il benessere dell'organismo.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item reveal delay-1">
+            <button class="faq-question">
+              Quante sedute sono necessarie?<span class="faq-arrow">↓</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Il numero di sedute varia in base alla natura del problema e
+                alla risposta individuale. In molti casi è possibile ottenere
+                miglioramenti significativi in 3–5 incontri, ma il piano verrà
+                definito insieme durante la prima visita.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item reveal delay-2">
+            <button class="faq-question">
+              L'osteopatia fa male?<span class="faq-arrow">↓</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Il trattamento osteopatico è generalmente indolore. Alcune
+                tecniche possono provocare una sensazione di pressione o leggero
+                fastidio momentaneo, ma il comfort del paziente è sempre la
+                priorità.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item reveal delay-3">
+            <button class="faq-question">
+              Come si prenota una visita?<span class="faq-arrow">↓</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Puoi prenotare compilando il modulo nella sezione contatti,
+                chiamando direttamente lo studio o inviando un messaggio
+                WhatsApp. Ti risponderemo entro 24 ore.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── CONTATTI / CTA ── -->
+    <section class="section contatti" id="contatti">
+      <div class="section-inner contatti-inner">
+        <div class="contatti-text reveal">
+          <span class="section-tag light">Prenota ora</span>
+          <h2>Inizia il tuo<br />percorso di benessere</h2>
+          <p>
+            Compila il modulo o contattaci direttamente.<br />La prima visita
+            include una valutazione completa senza impegno.
+          </p>
+          <div class="contatti-info">
+            <span>📍 Via Placeholder, 1 – Napoli</span>
+            <span>📞 +39 000 000 0000</span>
+            <span>✉️ info@osteomed.it</span>
+          </div>
+        </div>
+        <form class="contatti-form reveal delay-1" id="contact-form">
+          <div class="form-group">
+            <input type="text" placeholder="Nome e Cognome" required />
+          </div>
+          <div class="form-group">
+            <input type="email" placeholder="Email" required />
+          </div>
+          <div class="form-group">
+            <input type="tel" placeholder="Telefono" />
+          </div>
+          <div class="form-group">
+            <select>
+              <option value="" disabled selected>Seleziona il servizio</option>
+              <option>Osteopatia strutturale</option>
+              <option>Osteopatia viscerale</option>
+              <option>Osteopatia craniosacrale</option>
+              <option>Osteopatia pediatrica</option>
+              <option>Osteopatia in gravidanza</option>
+              <option>Osteopatia sportiva</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <textarea
+              placeholder="Descrivi brevemente il motivo della visita"
+              rows="4"
+            ></textarea>
+          </div>
+          <button type="submit" class="btn-primary full">
+            Invia richiesta
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- ── FOOTER ── -->
+    <footer class="footer">
+      <div class="footer-inner">
+        <div class="footer-logo">
+          <img src="osteomed ico-Photoroom.png" alt="OSTEOMED" />
+        </div>
+        <div class="footer-links">
+          <a href="#chi-siamo">Chi Siamo</a>
+          <a href="#servizi">Servizi</a>
+          <a href="#approccio">Approccio</a>
+          <a href="#faq">FAQ</a>
+          <a href="#contatti">Contatti</a>
+        </div>
+        <p class="footer-copy">
+          © 2026 OSTEOMED – Dott. Pasquale Pannuti · P.IVA 00000000000 ·
+          <a href="#">Privacy Policy</a>
+        </p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
