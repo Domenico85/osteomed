@@ -96,7 +96,59 @@ if (form) {
   });
 }
 
-/* -- SMOOTH ACTIVE LINK highlight -- */
+/* -----------------------------------------
+   CAL.COM EMBED
+   Sostituisci CAL_USERNAME con il tuo username Cal.com
+   es. "dott-pannuti" se il tuo link e' cal.com/dott-pannuti
+----------------------------------------- */
+const CAL_USERNAME = "prova_sito"; // <-- MODIFICA QUI
+
+// Mappa tab -> slug evento Cal.com (crea questi Event Types sul tuo account)
+const CAL_EVENTS = {
+  "prima-visita": "prima-visita",
+  "visita-controllo": "visita-controllo",
+  consulenza: "consulenza-gratuita",
+};
+
+let currentEvent = "prima-visita";
+
+function loadCalEmbed(eventSlug) {
+  const container = document.getElementById("cal-embed-container");
+  const notice = document.querySelector(".cal-notice");
+  if (!container) return;
+
+  // Se username non e' ancora configurato, mostra solo il placeholder
+  if (CAL_USERNAME === "IL_TUO_USERNAME") return;
+
+  // Nascondi placeholder, mostra embed
+  if (notice) notice.style.display = "none";
+
+  // Rimuovi iframe precedente
+  container.innerHTML = "";
+
+  const iframe = document.createElement("iframe");
+  iframe.src = `https://cal.com/${CAL_USERNAME}/${eventSlug}?embed=true&theme=light&primaryColor=4F868E&hideEventTypeDetails=false`;
+  iframe.title = "Prenota un appuntamento";
+  iframe.allow = "payment";
+  iframe.setAttribute("loading", "lazy");
+  container.appendChild(iframe);
+}
+
+// Tabs
+document.querySelectorAll(".tab-btn").forEach((btn) => {
+  btn.addEventListener("click", () => {
+    document
+      .querySelectorAll(".tab-btn")
+      .forEach((b) => b.classList.remove("active"));
+    btn.classList.add("active");
+    currentEvent = btn.dataset.cal;
+    loadCalEmbed(CAL_EVENTS[currentEvent]);
+  });
+});
+
+// Carica al primo render
+loadCalEmbed(CAL_EVENTS[currentEvent]);
+
 const sections = document.querySelectorAll("section[id]");
 const navLinks = document.querySelectorAll('.nav-links a[href^="#"]');
 

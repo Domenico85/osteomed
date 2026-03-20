@@ -37,7 +37,8 @@
           <a href="#servizi">Servizi</a>
           <a href="#approccio">Il Nostro Approccio</a>
           <a href="#faq">FAQ</a>
-          <a href="#contatti" class="nav-cta">Prenota</a>
+          <a href="#contatti">Contatti</a>
+          <a href="#prenota">Prenota</a>
         </nav>
         <button class="burger" id="burger" aria-label="Menu">
           <span></span><span></span><span></span>
@@ -359,14 +360,55 @@
               <p>
                 Puoi prenotare compilando il modulo nella sezione contatti,
                 chiamando direttamente lo studio o inviando un messaggio
-                WhatsApp. Ti risponderemo entro 24 ore.
+                WhatsApp. Ti risponderemo entro 24 ore oppure direttamente
+                online scegliendo giorno e ora dalla sezione "Prenota"...
               </p>
             </div>
           </div>
         </div>
       </div>
     </section>
+    <!-- ── PRENTOTA─ -->
+  <section class="section prenota" id="prenota">
+  <div class="section-inner">
+    <div class="section-header reveal">
+      <span class="section-tag">Prenota online</span>
+      <h2>Scegli il tuo<br />appuntamento</h2>
+      <p class="prenota-sub">Seleziona giorno e ora direttamente sul calendario. Riceverai una conferma immediata via email collegata al tuo Google Calendar.</p>
+    </div>
 
+    <div class="prenota-tabs reveal">
+      <button class="tab-btn active" data-cal="prima-visita">Prima visita</button>
+      <button class="tab-btn" data-cal="visita-controllo">Visita di controllo</button>
+      <button class="tab-btn" data-cal="consulenza">Consulenza gratuita</button>
+    </div>
+
+    <div class="cal-wrapper reveal delay-1">
+      <div class="cal-notice">
+        <div class="cal-notice-icon">📅</div>
+        <h3>Calendario online</h3>
+        <p>
+          Per attivare il calendario sostituisci <code>IL_TUO_USERNAME</code> nel file
+          <code>script.js</code> con il tuo username Cal.com, poi rimuovi questo placeholder.
+        </p>
+        <a href="https://cal.com" target="_blank" rel="noopener" class="btn-primary" style="margin-top:1rem;display:inline-block;">
+          Crea account Cal.com gratuito →
+        </a>
+      </div>
+      <div id="cal-embed-container"></div>
+    </div>
+
+    <p class="prenota-note reveal delay-2">
+      Preferisci chiamare?
+      <a href="tel:+390000000000">📞 +39 000 000 0000</a> &nbsp;·&nbsp;
+      <a href="https://wa.me/390000000000" target="_blank" rel="noopener">💬 WhatsApp</a>
+    </p>
+  </div>
+</section>
+<section class="section prenota" id="prenota"> ...
+↓
+<!-- CONTATTI / CTA -->
+<section class="section contatti" id="contatti"> ...
     <!-- ── CONTATTI / CTA ── -->
     <section class="section contatti" id="contatti">
       <div class="section-inner contatti-inner">
