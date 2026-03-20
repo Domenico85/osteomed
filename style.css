@@ -989,11 +989,10 @@ a {
   background: var(--white);
   border: 1px solid var(--border);
   border-radius: var(--radius);
-  overflow: hidden;
-  min-height: 420px;
+  overflow: visible;
   box-shadow: var(--shadow);
   display: flex;
-  align-items: center;
+  align-items: stretch;
   justify-content: center;
 }
 
@@ -1025,9 +1024,14 @@ a {
   font-size: 0.85rem;
 }
 
+#cal-embed-container {
+  width: 100%;
+}
+
 #cal-embed-container iframe {
   width: 100%;
-  min-height: 650px;
+  height: auto;
+  min-height: 100vh;
   border: none;
   display: block;
 }
